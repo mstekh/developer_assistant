@@ -1,7 +1,7 @@
 #try entering starting with "write python program that..."
 import openai
 
-openai.api_key = "your_api_key"
+openai.api_key = "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"
 openai.Model.list()
 
 # init chat 
@@ -24,7 +24,6 @@ while True:
 
     assistant_answer = completions.choices[0].message.content
     print("assistant:", assistant_answer)
-    print(type(assistant_answer))
 
     #write python program from your text request
     text = assistant_answer.split("\n")
@@ -33,7 +32,6 @@ while True:
     #write only python sintax to file from answer 
     write = False
     for line in text:
-        print(type(line))
         if line == "```python":
             write = True
             continue
