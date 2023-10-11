@@ -1,7 +1,7 @@
 #try entering starting with "write python program that..."
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 openai.Model.list()
 
 # init chat 
